@@ -72,7 +72,7 @@ form.addEventListener("submit", (e) => {
 
 // fetch API
 function fetchAPI(searchvalue){
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=ad49eb4c9a9d43929f131032230802&q=${searchvalue}&days=7&aqi=no&alerts=no&lang=vi`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=ad49eb4c9a9d43929f131032230802&q=${searchvalue}&days=7&aqi=no&alerts=no&lang=vi`)
         .then( res => {
             return res.json();
         }).then(res => {
