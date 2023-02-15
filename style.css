@@ -1,0 +1,256 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body{
+    background-image: url("https://img4.thuthuatphanmem.vn/uploads/2019/11/06/hinh-anh-da-lat-hoang-hon_025748936.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.bodyleft {
+    color: white;
+    border: 1px solid lightgray;
+    width: 400px;
+    margin: 90px auto;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(100, 100, 100, 0.4);
+    box-shadow: 10px 10px 50px 15px rgba(50, 50, 50, 0.556);
+}
+
+.search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.search-bar {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.search{
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+.search-icon {
+    margin-right: 5px;
+    left: 0;
+}
+
+#search-input {
+    border: 0;
+    outline: 0;
+    padding: 3px 3px 3px 20px;
+    background: transparent;
+    height: 20px;
+    color: white;
+    border-bottom: 1px solid lightgrey;
+}
+
+#search-input::placeholder {
+    color: rgb(206,206,206);
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 80px 50px;
+}
+
+.city-name {
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+
+.country-name{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.weather-desc {
+    font-size: 13px;
+}
+
+.weather-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.temperature {
+    font-size: 80px;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+.localtime{
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.additional-section {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.additional-section .row {
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.additional-section .item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.additional-section .item .label {
+    font-weight: bold;
+}
+
+/* body right */
+
+/* forecast */
+.bodyright{
+    color: white;
+    border: 1px solid lightgray;
+    width: 400px;
+    margin: 90px auto;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(100, 100, 100, 0.4);
+    box-shadow: 10px 10px 50px 15px rgba(50, 50, 50, 0.556);
+}
+.forecast{
+    background-color: rgba(62, 62, 62, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.forecast h3{
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+}
+.forecast-dayly{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dayly{
+    border-bottom: 1.5px solid rgba(89, 89, 89, 0.375);
+}
+.dayly ul{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.dayly ul li{
+    display: inline;
+    padding: 10px;
+}
+.dayly ul li button{
+    padding: 2px 7px;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid rgba(164, 164, 164, 0.538);
+    color: lightgrey;
+}
+.dayly ul li button:hover{
+    background-color: rgba(83, 83, 83, 0.738);
+    color: black;
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+}
+
+/* details */
+.detail{
+    background-color: rgba(62, 62, 62, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.detail h3{
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+}
+.detailitems{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 5px 0px 5px;
+}
+.detailitems .detail-body-right ul li{
+    border-bottom: 1.5px solid rgba(89, 89, 89, 0.375);
+}
+.detail-body-left{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.detail-body-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.detail-body-right ul li{
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+.detail-item2, .detail-item3, .detail-item4, .detail-item5, .detail-item6{
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .bodyleft{
+        margin: 10px auto;
+        width: 500px;
+    }
+    .bodyright{
+        margin: 10px auto;
+        width: 500px;
+    }
+    body{
+        background-size: cover;
+    }
+}

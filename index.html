@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4407335b4.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bodyleft">
+            <div class="main-section">
+                <form class="search-form">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố...">
+                </form>
+                <div class="info-wrapper">
+                    <p class="city-name">Ho Chi Minh City</p>
+                    <p class="country-name">Vietnam</p>
+                    <p class="weather-desc">-- Có Mây --</p>
+                    <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather icon" class="weather-icon">
+                    <p class="temperature">29&#176;C</p>
+                    <p class="localtime">2023-02-15 9:44</p>
+                </div>
+            </div>
+            <div class="additional-section">
+                <div class="row">
+                    <div class="item">
+                        <div class="label">Sunrise</div>
+                        <div class="value sunrise">06:14 AM</div>
+                    </div>
+                    <div class="item">
+                        <div class="label">Sunset</div>
+                        <div class="value sunset">06:01 PM</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <div class="label">Humidity</div>
+                        <div class="value"><span class="humidity">66</span> %</div>
+                    </div>
+                    <div class="item">
+                        <div class="label">Wind speed</div>
+                        <div class="value"><span class="wind-speed">11.2</span> km/h</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bodyright">
+            <div class="forecast">
+                <h3>Forecast</h3>
+                <div class="forecast-dayly" id="forecast-dayly">
+                    <div class="dayly">
+                        <ul class="dayly1">
+                            <li class="day1">2023-02-16</li>
+                            <li class="icon icon1"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                            <li class="maxtemp1">35.6&#176 C</li>
+                            <li class="mintemp1">22.9&#176 C</li>
+                            <li><button><i class="fa-solid fa-angle-right"></i></button></li>
+                        </ul>
+                    </div>
+                    <div class="dayly">
+                        <ul class="dayly2">
+                            <li class="day2">2023-02-17</li>
+                            <li class="icon icon2"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                            <li class="maxtemp2">36.3&#176 C</li>
+                            <li class="mintemp2">23.4&#176 C</li>
+                            <li><button><i class="fa-solid fa-angle-right"></i></button></li>
+                        </ul>
+                    </div>
+                    <div class="dayly">
+                        <ul class="dayly3">
+                            <li class="day3">2023-02-18</li>
+                            <li class="icon icon3"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                            <li class="maxtemp3">36.7&#176 C</li>
+                            <li class="mintemp3">25.4&#176 C</li>
+                            <li><button><i class="fa-solid fa-angle-right"></i></button></li>
+                        </ul>
+                    </div>
+                    <div class="dayly">
+                        <ul class="dayly4">
+                            <li class="day4">2023-02-19</li>
+                            <li class="icon icon4"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                            <li class="maxtemp4">35.3&#176 C</li>
+                            <li class="mintemp4">24.6&#176 C</li>
+                            <li><button><i class="fa-solid fa-angle-right"></i></button></li>
+                        </ul>
+                    </div>
+                    <div class="dayly">
+                        <ul class="dayly5">
+                            <li class="day5">2023-02-20</li>
+                            <li class="icon icon5"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                            <li class="maxtemp5">38.2&#176 C</li>
+                            <li class="mintemp5">24&#176 C</li>
+                            <li><button><i class="fa-solid fa-angle-right"></i></button></li>
+                        </ul>
+                    </div>
+                    <div class="dayly">
+                        <ul class="dayly6">
+                            <li class="day6">2023-02-21</li>
+                            <li class="icon icon6"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                            <li class="maxtemp6">38.6&#176 C</li>
+                            <li class="mintemp6">24&#176 C</li>
+                            <li><button><i class="fa-solid fa-angle-right"></i></button></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="detail">
+                <h3>Details</h3>
+                    <div class="detail-item1 active detailitems">
+                        <div class="detail-body-left">
+                            <ul>
+                                <li class="detail-icon"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                                <li class="detail-text">Nhiều nắng</li>
+                            </ul>
+                        </div>
+                        <div class="detail-body-right">
+                            <ul>
+                                <li class="detail-sunrise">Sunrise: 06:13 AM</li>
+                                <li class="detail-sunset">Sunset: 06:01 PM</li>
+                                <li class="detail-avgtempc">Average temperature: 28.7&#176; C</li>
+                                <li class="detail-avghumidity">Average humidity: 50 %</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail-item2 detailitems">
+                        <div class="detail-body-left">
+                            <ul>
+                                <li class="detail-icon"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                                <li class="detail-text">--</li>
+                            </ul>
+                        </div>
+                        <div class="detail-body-right">
+                            <ul>
+                                <li class="detail-sunrise">--</li>
+                                <li class="detail-sunset">--</li>
+                                <li class="detail-avgtempc">--</li>
+                                <li class="detail-avghumidity">--</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail-item3 detailitems">
+                        <div class="detail-body-left">
+                            <ul>
+                                <li class="detail-icon"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                                <li class="detail-text">--</li>
+                            </ul>
+                        </div>
+                        <div class="detail-body-right">
+                            <ul>
+                                <li class="detail-sunrise">--</li>
+                                <li class="detail-sunset">--</li>
+                                <li class="detail-avgtempc">--</li>
+                                <li class="detail-avghumidity">--</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail-item4 detailitems">
+                        <div class="detail-body-left">
+                            <ul>
+                                <li class="detail-icon"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                                <li class="detail-text">--</li>
+                            </ul>
+                        </div>
+                        <div class="detail-body-right">
+                            <ul>
+                                <li class="detail-sunrise">--</li>
+                                <li class="detail-sunset">--</li>
+                                <li class="detail-avgtempc">--</li>
+                                <li class="detail-avghumidity">--</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail-item5 detailitems">
+                        <div class="detail-body-left">
+                            <ul>
+                                <li class="detail-icon"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                                <li class="detail-text">--</li>
+                            </ul>
+                        </div>
+                        <div class="detail-body-right">
+                            <ul>
+                                <li class="detail-sunrise">--</li>
+                                <li class="detail-sunset">--</li>
+                                <li class="detail-avgtempc">--</li>
+                                <li class="detail-avghumidity">--</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail-item6 detailitems">
+                        <div class="detail-body-left">
+                            <ul>
+                                <li class="detail-icon"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></li>
+                                <li class="detail-text">--</li>
+                            </ul>
+                        </div>
+                        <div class="detail-body-right">
+                            <ul>
+                                <li class="detail-sunrise">--</li>
+                                <li class="detail-sunset">--</li>
+                                <li class="detail-avgtempc">--</li>
+                                <li class="detail-avghumidity">--</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="moment.js"></script>
+</body>
+<script src="script.js"></script>
+</html>
